@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>A Little Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="main-container">
+      <section class="content">
+        <!-- ==============================
+           INTRO
+      =============================== -->
+
+        <div class="intro">
+          <p class="small-title">I HAVE SOMETHING FOR YOU</p>
+
+          <h1 class="title">SURPRISE</h1>
+
+          <p class="subtitle">There's a little something waiting inside...</p>
+        </div>
+
+        <!-- ==============================
+           SURPRISE AREA
+      =============================== -->
+
+        <div class="surprise-area">
+          <span class="floating-heart heart-one">♥</span>
+          <span class="floating-heart heart-two">♥</span>
+          <span class="floating-heart heart-three">♥</span>
+
+          <!-- ==============================
+             ENVELOPE
+        =============================== -->
+
+          <div class="envelope-container">
+            <div class="envelope" id="envelope">
+              <!-- ==============================
+                 LETTER
+            =============================== -->
+
+              <div class="letter">
+                <div class="letter-content">
+                  <!-- ==========================
+                     QUESTION
+                =========================== -->
+
+                  <div class="step" id="step0">
+                    <span class="letter-label"> A LITTLE QUESTION </span>
+
+                    <span class="big-letter-heart"> ❤️ </span>
+
+                    <h2 id="questionTitle">
+                      Would you like to<br />
+                      go on a date with me?
+                    </h2>
+
+                    <div class="letter-line"></div>
+
+                    <p class="question-text" id="questionText">
+                      Just you and me.<br />
+                      What do you say?
+                    </p>
+
+                    <!-- ANSWERS -->
+
+                    <div class="answer-buttons" id="answerButtons">
+                      <button class="yes-btn" id="yesBtn">YES ❤️</button>
+
+                      <button class="no-btn" id="noBtn">NO 😭</button>
+                    </div>
+                  </div>
+
+                  <!-- ==========================
+                     STEP 1 - DATE
+                =========================== -->
+
+                  <div class="step hidden" id="step1">
+                    <div class="step-number">STEP 1 OF 4</div>
+
+                    <span class="step-icon"> 📅 </span>
+
+                    <h2>Pick a Date</h2>
+
+                    <p class="step-description">When are you free?</p>
+
+                    <input type="date" id="dateInput" class="date-input" />
+
+                    <div class="navigation-buttons">
+                      <button class="next-btn" id="dateNext">NEXT →</button>
+                    </div>
+                  </div>
+
+                  <!-- ==========================
+                     STEP 2 - PLACE
+                =========================== -->
+
+                  <div class="step hidden" id="step2">
+                    <div class="step-number">STEP 2 OF 4</div>
+
+                    <span class="step-icon"> 🍴 </span>
+
+                    <h2>Where should we eat?</h2>
+
+                    <p class="step-description">You choose ❤️</p>
+
+                    <div class="place-options">
+                      <button class="place-btn" data-place="Jollibee">
+                        🍔 Jollibee
+                      </button>
+
+                      <button class="place-btn" data-place="McDonald's">
+                        🍟 McDonald's
+                      </button>
+
+                      <button class="place-btn" data-place="Coffee Shop">
+                        ☕ Coffee Shop
+                      </button>
+
+                      <button class="place-btn" data-place="Restaurant">
+                        🍽️ Restaurant
+                      </button>
+
+                      <button
+                        class="place-btn full-place"
+                        data-place="Surprise Me"
+                      >
+                        🎁 Surprise Me
+                      </button>
+                    </div>
+
+                    <div class="navigation-buttons">
+                      <button class="back-btn" id="placeBack">← BACK</button>
+
+                      <button class="next-btn" id="placeNext">NEXT →</button>
+                    </div>
+                  </div>
+
+                  <!-- ==========================
+                     STEP 3 - TIME
+                =========================== -->
+
+                  <div class="step hidden" id="step3">
+                    <div class="step-number">STEP 3 OF 4</div>
+
+                    <span class="step-icon"> ⏰ </span>
+
+                    <h2>What time?</h2>
+
+                    <p class="step-description">What time should we meet?</p>
+
+                    <input type="time" id="timeInput" class="date-input" />
+
+                    <div class="navigation-buttons">
+                      <button class="back-btn" id="timeBack">← BACK</button>
+
+                      <button class="next-btn" id="timeNext">NEXT →</button>
+                    </div>
+                  </div>
+
+                  <!-- ==========================
+                     STEP 4 - REVIEW
+                =========================== -->
+
+                  <div class="step hidden" id="step4">
+                    <div class="step-number">STEP 4 OF 4</div>
+
+                    <span class="step-icon"> 💌 </span>
+
+                    <h2>Our Date</h2>
+
+                    <p class="step-description">Here's what we have planned:</p>
+
+                    <div class="review-card">
+                      <div class="review-row">
+                        <span>📅</span>
+
+                        <div>
+                          <small> DATE </small>
+
+                          <strong id="reviewDate"> - </strong>
+                        </div>
+                      </div>
+
+                      <div class="review-row">
+                        <span>🍴</span>
+
+                        <div>
+                          <small> PLACE </small>
+
+                          <strong id="reviewPlace"> - </strong>
+                        </div>
+                      </div>
+
+                      <div class="review-row">
+                        <span>⏰</span>
+
+                        <div>
+                          <small> TIME </small>
+
+                          <strong id="reviewTime"> - </strong>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="navigation-buttons">
+                      <button class="back-btn" id="reviewBack">← BACK</button>
+
+                      <button class="confirm-btn" id="confirmBtn">
+                        CONFIRM ❤️
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- ==========================
+                     FINAL
+                =========================== -->
+
+                  <div class="step hidden" id="finalStep">
+                    <div class="final-card">
+                      <div class="final-heart">❤️</div>
+
+                      <span class="confirmed-label"> DATE CONFIRMED </span>
+
+                      <h2>IT'S A DATE! 🥰</h2>
+
+                      <div class="final-divider"></div>
+
+                      <div class="final-details">
+                        <div class="final-detail">
+                          <span>📅</span>
+
+                          <div>
+                            <small> DATE </small>
+
+                            <strong id="finalDate"> - </strong>
+                          </div>
+                        </div>
+
+                        <div class="final-detail">
+                          <span>⏰</span>
+
+                          <div>
+                            <small> TIME </small>
+
+                            <strong id="finalTime"> - </strong>
+                          </div>
+                        </div>
+
+                        <div class="final-detail">
+                          <span>📍</span>
+
+                          <div>
+                            <small> PLACE </small>
+
+                            <strong id="finalPlace"> - </strong>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p class="final-message">
+                        I can't wait to spend some time with you. ❤️
+                      </p>
+
+                      <div class="confirmed-status">● CONFIRMED</div>
+                    </div>
+
+                    <p class="screenshot-message">
+                      📸 Please screenshot this and send it to me 😂❤️
+                    </p>
+
+                    <button class="screenshot-btn" id="screenshotBtn">
+                      📸 SCREENSHOT THIS FOR ME
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ==============================
+                 ENVELOPE BACK
+            =============================== -->
+
+              <div class="envelope-back"></div>
+
+              <!-- ==============================
+                 ENVELOPE FRONT
+            =============================== -->
+
+              <div class="envelope-front">
+                <div class="front-left"></div>
+
+                <div class="front-right"></div>
+              </div>
+
+              <!-- ==============================
+                 ENVELOPE FLAP
+            =============================== -->
+
+              <div class="envelope-flap"></div>
+
+              <!-- ==============================
+                 SEAL
+            =============================== -->
+
+              <div class="envelope-seal">♥</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==============================
+           INSTRUCTION
+      =============================== -->
+
+        <div class="instruction" id="instruction">
+          <span class="instruction-icon"> ♥ </span>
+
+          <span> Click the envelope </span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
